@@ -40,6 +40,16 @@ function generatePassword() {
       if (confirmNumbers) {
         chosenCharacters += number
       }
+
+      console.log(confirmUpperCase, confirmLowerCase, confirmSpecial, confirmNumbers)
+
+      var password = "";
+    
+      for (var i = 0; i < passwordLength.length; i++) {
+        var chosenCharacters = Math.floor(Math.random() * chosenCharacters.length); password += chosenCharacters[chosenIndex];
+      }
+    
+      return password;
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
