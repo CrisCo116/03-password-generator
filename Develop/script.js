@@ -1,6 +1,14 @@
 // Assignment code here
-
-
+function generatePassword() {
+    const lowercase = 'qwertyuiopasdfghjklzxcvbnm'
+    const uppercase = 'QWERTYUIOPASDFGHJKLZXCVBNM'
+    const special = '!@#$%^&*'
+    const number = '123456789'
+  
+    var passwordLength = Number(prompt('how many characters would you like your password to have?'))
+  
+    console.log(passwordLength)
+}
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
